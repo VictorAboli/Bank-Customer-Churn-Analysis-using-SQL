@@ -1,5 +1,6 @@
 # 🏦 Bank Customer Churn Analysis using SQL
 
+
 ### End-to-End SQL Data Analysis Project | Exploratory Data Analysis | Business Intelligence | Customer Retention Analytics
 
 ![SQL](https://img.shields.io/badge/SQL-Microsoft%20SQL%20Server-blue?style=for-the-badge)
@@ -19,6 +20,9 @@ In this project, I performed an end-to-end **Exploratory Data Analysis (EDA)** a
 
 The objective was not only to write SQL queries but also to think like a Data Analyst by converting raw customer data into actionable business insights and recommendations.
 
+This repository is designed to showcase SQL skills required for Data Analyst, Business Analyst, and Business Intelligence Analyst roles.
+
+
 ---
 
 # 🎯 Project Objectives
@@ -33,58 +37,58 @@ The objective was not only to write SQL queries but also to think like a Data An
 - Practice real-world SQL interview scenarios
 
 
-# Bank-Customer-Churn-Analysis-using-SQL
-**This project performs an end-to-end Exploratory Data Analysis (EDA) and Business Intelligence Analysis on a Bank Customer Churn dataset using Microsoft SQL Server.**
 
-**Project Overview**
-**This project performs an end-to-end Exploratory Data Analysis (EDA) and Business Intelligence Analysis on a Bank Customer Churn dataset using Microsoft SQL Server.**
+# 📈 Key Insights
 
-**The objective is to analyze customer behavior, identify factors contributing to customer churn, and generate actionable business insights through SQL queries. The project demonstrates practical SQL techniques including aggregations, conditional logic, Common Table Expressions (CTEs), ranking functions, window functions, and business reporting.**
+✔ Overall Customer Churn Rate: **20.37%**
 
-**This repository is designed to showcase SQL skills required for Data Analyst, Business Analyst, and Business Intelligence Analyst roles.**
+✔ Germany has the **highest customer churn rate**
 
-🎯**Project Objective**
+✔ Middle-aged customers are more likely to churn
 
-The objective of this project is to:
+✔ Customers with **3–4 banking products** show significantly higher churn rates
 
-Perform Exploratory Data Analysis (EDA)
-Analyze customer churn patterns
-Identify high-risk customer segments
-Measure customer engagement
-Evaluate customer retention factors
-Generate business recommendations using SQL
-Build analytical thinking through real-world business scenarios
+✔ Inactive customers churn nearly **2× more** than active customers
 
-📌 **Key Business Insights**
+✔ Customers with higher balances are at greater churn risk
 
-Some important findings from the analysis include:
+✔ Poor credit score customers exhibit the highest churn behavior
 
-Overall customer churn rate is 20.37%.
-Germany has the highest customer churn rate among all countries.
-Middle-aged customers exhibit the highest churn behavior.
-Customers with 3–4 banking products show significantly higher churn rates.
-Inactive customers are almost twice as likely to churn compared to active customers.
-Customers with higher account balances have greater churn risk.
-Customers with poor credit scores are more likely to leave the bank.
-Senior customers with high balances and inactive accounts represent the highest-risk customer segment.
+✔ Senior customers with high balances and inactive accounts represent the highest-risk customer segment
 
-💡 **Business Recommendations**
+---
 
-Based on the analysis:
+# 💡 Business Recommendations
 
-Develop targeted retention campaigns for inactive customers.
-Improve loyalty programs for long-tenured customers.
-Provide exclusive benefits for high-value customers.
-Strengthen customer engagement in Germany and France.
-Monitor customers with poor credit scores more proactively.
-Create personalized offers for customers owning multiple banking products.
-Build early-warning dashboards for high-risk customer segments.
+- Improve customer engagement programs for inactive members
+- Introduce loyalty rewards for long-term customers
+- Provide exclusive benefits for high-value customers
+- Strengthen retention strategies in Germany
+- Build proactive monitoring for low credit score customers
+- Develop personalized offers based on product ownership
+- Create executive dashboards for churn monitoring
 
+---
+
+# ⭐ Why This Project?
+
+This project demonstrates how SQL can be used beyond querying data by solving real business problems, identifying customer behavior patterns, and generating insights that support strategic business decisions.
+
+The analysis follows a business-driven approach similar to what Data Analysts perform in banking and financial organizations.
+
+---
+
+# 👨‍💻 Author
+
+**Victor Abraham Boli**
+
+**Data Analyst | SQL | Python | Power BI | Tableau**
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
 
 **Solving Business Problems**
 
 **1. Customer Churn Rate Analysis**
-Business Problem:
 The bank's leadership wants to know the overall customer churn rate to understand how serious the retention problem is.
 Question:
 **Q)What percentage of customers have exited the bank?**
@@ -94,7 +98,7 @@ SELECT
 FROM Bank_churn;
 ```
 **2. Geography Performance Analysis (Beginner)**
-Business Problem:
+
 The marketing team believes certain countries are losing significantly more customers than others.
 **Q. Which geographical region has the highest churn rate, and how many customers were lost from each region?**
 ```sql
@@ -106,7 +110,7 @@ FROM Bank_churn
 GROUP BY Country
 ```
 **3. Customer Age Risk Analysis (Intermediate)**
-Business Problem:
+
 Management suspects older customers are leaving more frequently than younger customers.
 **Q.Divide customers into age groups and identify which age group has the highest churn rate.?**
 ```sql 
@@ -127,7 +131,6 @@ GROUP BY CASE
 END 
 ```
 **4. Product Retention Analysis (Intermediate)**
-Business Problem:
 The product team wants to know whether owning multiple bank products improves customer retention.
 **Q.How does churn vary based on the number of products a customer owns?**
 ```sql
@@ -143,7 +146,6 @@ FROM(
 )t
 ```
 **5. Active Customer Behavior (Intermediate)**
-Business Problem:
 The customer success team believes inactive members are more likely to leave the bank.
 **Q.Compare churn rates between active and inactive members.**
 ```sql
@@ -163,7 +165,6 @@ FROM (
 )t
 ```
 **6. High-Value Customer Risk Analysis (Intermediate)**
-Business Problem:
 Losing customers with large account balances hurts the bank's profitability.
 **Q.Identify the balance ranges with the highest customer churn and determine whether high-balance customers are at greater risk.**
 ```sql
@@ -194,7 +195,6 @@ FROM(
 )t
 ```
 **7. Customer Loyalty vs Churn (Intermediate)**
-Business Problem:
 The retention department wants to know whether longer customer relationships reduce churn.
 **Q.Analyze customer churn across different tenure groups and determine whether customer loyalty reduces the likelihood of leaving.**
 ```sql
@@ -219,7 +219,6 @@ CONCAT(CAST(Customer_exited * 100.0 / Total_customer AS DECIMAL(10,2)),'%') AS C
 FROM Base_query
 ```
 **8. Credit Score Impact on Churn (Advanced)**
-Business Problem:
 The risk department wants to understand whether customers with different credit score ranges behave differently.
 **Q. Group customers into credit score categories and determine which category experiences the highest churn.**
 ```sql
@@ -247,7 +246,6 @@ FROM Basequery_1
 ORDER BY Churn_rates DESC
 ```
 **9. High-Risk Customer Profile (Advanced)**
-Business Problem:
 The executive team wants to identify the profile of customers most likely to leave so retention campaigns can be targeted effectively.
 **Q. Identify the combination of customer characteristics (Age, Geography, Gender, Credit Score, Products, Active Status, Balance, Tenure) that produces the highest churn rate.**
 ```sql
@@ -312,7 +310,6 @@ HAVING COUNT(*) > 10
 ORDER BY Churn_rate DESC
 ```
 **10. Executive Retention (Expert)**
-Business Problem:
 The CEO wants a dashboard highlighting where the bank is losing customers and where retention efforts should be focused.
 
 **Q.Create a ranked report showing the top customer segments with the highest churn rates based on multiple business dimensions such as Geography, Age Group, Product Count, Active Status, Credit Score Range, and Balance Range.**
