@@ -1,3 +1,38 @@
+# 🏦 Bank Customer Churn Analysis using SQL
+
+### End-to-End SQL Data Analysis Project | Exploratory Data Analysis | Business Intelligence | Customer Retention Analytics
+
+![SQL](https://img.shields.io/badge/SQL-Microsoft%20SQL%20Server-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-Intermediate%20to%20Advanced-orange?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Domain-Banking-red?style=for-the-badge)
+
+</div>
+
+---
+
+# 📖 Project Overview
+
+Customer churn is one of the biggest challenges faced by financial institutions. Losing existing customers directly impacts revenue, profitability, and long-term business growth.
+
+In this project, I performed an end-to-end **Exploratory Data Analysis (EDA)** and solved **10 real-world business problems** using SQL on a Bank Customer Churn dataset.
+
+The objective was not only to write SQL queries but also to think like a Data Analyst by converting raw customer data into actionable business insights and recommendations.
+
+---
+
+# 🎯 Project Objectives
+
+- Perform Exploratory Data Analysis (EDA)
+- Analyze customer churn behavior
+- Identify high-risk customer segments
+- Measure customer engagement
+- Evaluate customer loyalty
+- Build business KPIs using SQL
+- Provide data-driven business recommendations
+- Practice real-world SQL interview scenarios
+
+
 # Bank-Customer-Churn-Analysis-using-SQL
 **This project performs an end-to-end Exploratory Data Analysis (EDA) and Business Intelligence Analysis on a Bank Customer Churn dataset using Microsoft SQL Server.**
 
