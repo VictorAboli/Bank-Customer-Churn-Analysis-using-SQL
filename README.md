@@ -1,5 +1,6 @@
 # 🏦 Bank Customer Churn Analysis using SQL
 
+![Churn Analysis](https://github.com/VictorAboli/Bank-Customer-Churn-Analysis-using-SQL/blob/65503352084b69a3a2156ef0016f56aef64b6744/Churn-Prediction-scaled.jpg)
 
 ### End-to-End SQL Data Analysis Project | Exploratory Data Analysis | Business Intelligence | Customer Retention Analytics
 
@@ -22,8 +23,9 @@ The objective was not only to write SQL queries but also to think like a Data An
 
 This repository is designed to showcase SQL skills required for Data Analyst, Business Analyst, and Business Intelligence Analyst roles.
 
-
 ---
+# Data Source 
+https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dataset/data
 
 # 🎯 Project Objectives
 
